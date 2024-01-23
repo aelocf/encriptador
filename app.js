@@ -8,6 +8,7 @@ let desencriptado= palabraSecreta.toString(arreglo).replace(/,/g, '');
 console.log(arreglo);
 console.log(desencriptado);
 
+//recorrer el array para crear encriptar
 for (let i = 0; i < arreglo.length; i++) {
     if(arreglo[i]=="a"){
         arreglo[i]="ai";
@@ -31,7 +32,7 @@ for (let i = 0; i < arreglo.length; i++) {
 
 }
 
-
+//recorrer el array para crear desencriptar
 for (let i = 0; i < arreglo.length; i++) {
     if(arreglo[i]=="ai"){
         arreglo[i]="a";
