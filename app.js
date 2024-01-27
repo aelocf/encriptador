@@ -87,7 +87,7 @@ for (let i = 0; i < textoEncriptado.length; i++) {
     if(arreglo[i]=="u"){
         if(arreglo[i+1]=="f"){
             if(arreglo[i+2]=="a"){
-                if(arreglo[i+3]=="t"){
+                if(arreglo[i+3]==""){
                     arreglo.splice(i+1, 3);
                     console.log(arreglo)
                 }

@@ -1,0 +1,321 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+header{}
+
+body{  
+}
+
+.container{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color:#f3f5fc ;
+}
+
+.texto{
+    position: absolute;
+    width: 45%;
+    height: 60%;
+    left: 15%;
+    top: 15%;
+    font-family: "inter";
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 48px;
+    background-color:#f3f5fc;
+    border: none;
+}
+.texto::placeholder{
+    color: #0A3871;
+}
+.texto:focus, 
+.texto:active{
+    border: none;
+    outline: none;
+    color: #0A3871;
+}
+
+
+.condicion{
+    display: flex;
+    font-family: "inter";
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 8px;
+    position: absolute;
+    width: 80%;
+    left: 12%;
+    top: 80%;
+
+
+}
+
+.condicion p{
+    color: #495057;
+    line-height: 150%;
+    flex: none;
+    flex-grow: 0;
+}
+
+.boton{
+    display: flex;
+    font-family: "inter";
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1% 1%;
+    align-items: center;
+    position: absolute;
+   
+    gap: 8px;
+    width: 80%;
+    left: 12%;
+    top: 81%;
+}
+
+.btn-encriptar{
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    gap: 8px;
+    width: 25%;
+    background-color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #ffffff;
+    font-family: "inter";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+}
+.btn-encriptar:hover{
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    gap: 8px;
+    width: 25%;
+    background-color: #1957a4;
+     border: 3.5px solid #3877c4;
+    border-radius: 24px;
+    color: #ffffff;
+    font-family: "inter";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+}
+.btn-encriptar:active{
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    gap: 8px;
+    width: 25%;
+    background-color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #ffffff;
+    font-family: "inter";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+}
+
+
+.btn-desencriptar{
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    gap: 8px;
+    width: 25%;
+    background-color: #D8DFE8;
+    border: 1px solid #D8DFE8;
+    border-radius: 24px;
+    color: #0A3871;
+    font-family: "inter";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+
+}
+
+.btn-desencriptar:hover{
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    gap: 8px;
+    width: 25%;
+    background-color: #1957a4;
+    border: 3.5px solid #3877c4;
+    border-radius: 24px;
+    color: #ffffff;
+    font-family: "inter";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+
+}
+
+
+.btn-desencriptar:active{
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    gap: 8px;
+    width: 25%;
+    background-color: #0A3871;
+    border: 2px solid #0A3871;
+    border-radius: 24px;
+    color: #ffffff;
+    font-family: "inter";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+
+}
+
+.container-resultado{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    width: 30%;
+    height: 90%;
+    left: 60%;
+    top: 5%;
+    background: #ffffff;
+    box-shadow: 0 24px 32px -8px rgba(0, 0, 0, 0.14);
+    border-radius: 32px;
+}
+
+.mensaje-resultado{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.1%;
+    gap: 16px;
+    width: 100%;
+    top: 65%;
+    text-align: center;
+}
+
+.mensaje-resultado h2{
+    font-family: "inter";
+    font-style: normal;
+    font-size: 24px;
+    font-weight: 700;
+    width: 60%;
+    line-height: 120px;
+    text-align: center;
+    color: #343a40;
+}
+
+.mensaje-resultado p{
+    display: flex;
+    font-family: "inter";
+    font-weight: 400;
+    font-size: 16px;
+    position: absolute;
+    width: 78%;
+    color: #495057;
+    line-height: 150%;
+}
+
+.mensaje-resultado textarea{
+    border: none;
+}
+
+#imagendinamica{
+    position: absolute;
+    width: 80%;
+    height: 50%;
+    top: 18%;
+
+}
+
+/*el diseño responsivo para dispositivos moviles*/
+
+@media (max-width: 57.5em) {
+    .container {
+        display: flex;
+        flex-direction: row;
+
+    };
+    .encriptador{
+        width: 100%;
+    }
+    .texto{
+        width: 80%;
+        height: 60%;
+        left: 10%;
+        top: 5%;
+    }
+    
+    .condicion{
+        width: 80%;
+        top: 60%;
+        left: 10%;
+    }
+    .condicion .p{
+        font-size: 16px;
+    }
+    .boton{
+        width: 80%;
+        top: 63%;
+        left: 10%; 
+    }
+    .btn-encriptar{
+        width: 48%;
+        border-radius: 16px;
+    }
+    .btn-desencriptar{
+        width: 48%;
+        border-radius: 16px;
+    }
+
+    .btn-encriptar:hover, .btn-desencriptar.btn-encriptar:hover{
+        width: 48%;
+        border-radius: 16px;
+    }
+    .btn-encriptar:active, .btn-desencriptar.btn-encriptar:active{
+        width: 48%;
+        border-radius: 16px;
+    }
+    .container-resultado{
+        width: 80%;
+        height: 25%;
+        left: 10%;
+        top:75%
+    }
+
+    .mensaje-resultado{
+        width: 100%;
+        top: 5%;
+    }
+    .container-resultado img{
+        visibility: hidden;
+    }
+    .mensaje-resultado h2{
+        font-size: 21px;
+        width: 80%;
+        line-height: 60px;
+        text-align: center;
+        color: #343a40;
+    }
+    .mensaje-resultado p{
+        font-size: 15px;
+        width: 80%;
+        line-height: 40px;
+        text-align: center;
+        color: #343a40;
+    }
+    
+}

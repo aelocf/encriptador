@@ -5,18 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="app.js"></script>
-    <title>Document</title>
+    <title>Encriptador</title>
 </head>
 <body>
-    <div>
-        <textarea name="texto" id="texto" class="textosec" cols="30" rows="10" placeholder="ingresa tu texto aqui y hagamos magia"></textarea>
-        <input type="submit" onclick="" name="encriptar" id="encriptar" value="encriptar">
-        <input type="submit" onclick="" name="desencriptar" id="desencriptar" value="desencriptar">
-    </div>
-    <div>
-        <h2>Aqui esta tu resultado</h2>
-        <h3></h3>
-        <p></p>
-    </div>
+    <header>
+        <img class="imglogo" src="./imagenes/#" alt="Logo Alura">
+    </header>
+    <main>
+        <div class="container" >
+            <div class="encriptador" >
+                <textarea name="texto" id="texto" class="texto" cols="30" rows="10" placeholder="Ingresa tu texto aquí y hagamos magia"></textarea>
+            </div>
+            <div class="condicion">
+                <p>solo letras minusculas y sin acento seran admitidas</p>
+            </div> 
+            <div class="boton">
+                <input type="button" onclick="encriptarTexto();" name="encriptar" id="btn-encriptar" class="btn-encriptar" value="encriptar">
+                <input type="button" onclick="desencriptarTexto()" name="desencriptar" id="btn-desencriptar" class="btn-desencriptar" value="desencriptar">
+            </div>     
+        </div>
+
+        <div class="container-resultado">
+            <img src="" alt="imagen dinamica" id="imagendinamica">
+            <div id="mensaje-resultado" class="mensaje-resultado">
+                <h2 id="titulo-resultado">Ningun texto encontrado</h2>
+                <p class="parrafo">Ingrese aqui el texto que desee encriptar o desencriptar.</p>
+                <textarea name="mensaje" id="mensaje" class="mensaje" cols="30" rows="5"></textarea>
+            </div>
+            
+        </div>
+    </main>
+    <footer>
+        <p>Desarrollado por <a href="">Aelohim Chamul</a> alumno de Oracel Next Education</p>
+    </footer>
 </body>
 </html>
