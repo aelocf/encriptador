@@ -3,99 +3,143 @@
 function encriptarTexto(){
     let arreglo= document.getElementById("texto").value.split('');
     let textEncript;
-    for (let i = 0; i < arreglo.length; i++) {
-        if(arreglo[i]=="a"){
-            arreglo[i]="ai";
-            console.log(arreglo);
+    if(arreglo.length!=0){
+        for (let i = 0; i < arreglo.length; i++) {
+            if(arreglo[i]=="a"){
+                arreglo[i]="ai";
+                console.log(arreglo);
+            }
+            if(arreglo[i]=="e"){
+                arreglo[i]="enter";
+                console.log(arreglo)
+            }
+            if(arreglo[i]=="i"){
+                arreglo[i]="imes";
+                console.log(arreglo);
+            }
+            if(arreglo[i]=="o"){
+                arreglo[i]="ober";
+                console.log(arreglo);
+            }
+            if(arreglo[i]=="u"){
+                arreglo[i]="ufat";
+                console.log(arreglo);
+            }
+        
         }
-        if(arreglo[i]=="e"){
-            arreglo[i]="enter";
-            console.log(arreglo)
-        }
-        if(arreglo[i]=="i"){
-            arreglo[i]="imes";
-            console.log(arreglo);
-        }
-        if(arreglo[i]=="o"){
-            arreglo[i]="ober";
-            console.log(arreglo);
-        }
-        if(arreglo[i]=="u"){
-            arreglo[i]="ufat";
-            console.log(arreglo);
-        }
-    
+        textEncript= arreglo.toString().replace(/,/g, '');
+
+        console.log("Texto encriptado exitosamente: " + textEncript);
+        etiquetasActualizadas();
+        document.getElementById("respuesta").textContent=textEncript;
+        
+    }else{
+        alert("No hay un mensaje que encriptar");
+        document.getElementById("imagendinamica").src="./#";
     }
-    textoDesncriptado= arreglo.toString().replace(/,/g, '');
-    console.log("Texto encriptado exitosamente");
-    return textEncript;
 };
 
 function desencriptarTexto(){
     let textoEncriptado= document.getElementById("texto").value.split('');
     let textoDesncriptado;
-    for (let i = 0; i < textoEncriptado.length; i++) {
-        if(arreglo[i]=="a"){
-            if(arreglo[i+1]=="i"){
-                arreglo.splice(i+1, 1);
-                console.log(arreglo);
+    if(textoEncriptado.length!=0){
+        for (let i = 0; i < textoEncriptado.length; i++) {
+            if(textoEncriptado[i]=="a"){
+                if(textoEncriptado[i+1]=="i"){
+                    textoEncriptado.splice(i+1, 1);
+                    console.log(textoEncriptado);
+                }
+                console.log(textoEncriptado)
             }
-            console.log(arreglo)
-        }
-        if(arreglo[i]=="e"){
-            if(arreglo[i+1]=="n"){
-                if(arreglo[i+2]=="t"){
-                    if(arreglo[i+3]=="e"){
-                        if(arreglo[i+4]=="r"){
-                            arreglo.splice(i+1, 4);
-                            console.log(arreglo)
+            if(textoEncriptado[i]=="e"){
+                if(textoEncriptado[i+1]=="n"){
+                    if(textoEncriptado[i+2]=="t"){
+                        if(textoEncriptado[i+3]=="e"){
+                            if(textoEncriptado[i+4]=="r"){
+                                textoEncriptado.splice(i+1, 4);
+                                console.log(textoEncriptado)
+                            }
+                        }
+                    } 
+                }
+                console.log(textoEncriptado);
+            } 
+            
+                
+            if(textoEncriptado[i]=="i"){
+                if(textoEncriptado[i+1]=="m"){
+                    if(textoEncriptado[i+2]=="e"){
+                        if(textoEncriptado[i+3]=="s"){
+                            textoEncriptado.splice(i+1, 3);
+                            console.log(textoEncriptado)
                         }
                     }
                 } 
+                
+                console.log(textoEncriptado);
             }
-            console.log(arreglo);
-        } 
+            if(textoEncriptado[i]=="o"){
+                if(textoEncriptado[i+1]=="b"){
+                    if(textoEncriptado[i+2]=="e"){
+                        if(textoEncriptado[i+3]=="r"){
+                            textoEncriptado.splice(i+1, 3);
+                            console.log(textoEncriptado)
+                        }
+                    }
+                } 
+                
+                console.log(textoEncriptado);
+            }
+            if(textoEncriptado[i]=="u"){
+                if(textoEncriptado[i+1]=="f"){
+                    if(textoEncriptado[i+2]=="a"){
+                        if(textoEncriptado[i+3]=="t"){
+                            textoEncriptado.splice(i+1, 3);
+                            console.log(textoEncriptado)
+                        }
+                    }
+                } 
+                
+                console.log(textoEncriptado);
+            }
+        }
+        textoDesncriptado= textoEncriptado.toString().replace(/,/g, '');
+        console.log("Texto desncriptado exitosamente" + textoDesncriptado);
+        etiquetasActualizadas();
+        document.getElementById("respuesta").textContent=textoDesncriptado;
         
-            
-        if(arreglo[i]=="i"){
-            if(arreglo[i+1]=="m"){
-                if(arreglo[i+2]=="e"){
-                    if(arreglo[i+3]=="s"){
-                        arreglo.splice(i+1, 3);
-                        console.log(arreglo)
-                    }
-                }
-            } 
-            
-            console.log(arreglo);
-        }
-        if(arreglo[i]=="o"){
-            if(arreglo[i+1]=="b"){
-                if(arreglo[i+2]=="e"){
-                    if(arreglo[i+3]=="r"){
-                        arreglo.splice(i+1, 3);
-                        console.log(arreglo)
-                    }
-                }
-            } 
-            
-            console.log(arreglo);
-        }
-        if(arreglo[i]=="u"){
-            if(arreglo[i+1]=="f"){
-                if(arreglo[i+2]=="a"){
-                    if(arreglo[i+3]==""){
-                        arreglo.splice(i+1, 3);
-                        console.log(arreglo)
-                    }
-                }
-            } 
-            
-            console.log(arreglo);
-        }
+        return textoDesncriptado;
+    }else{
+        alert("No hay mensaje para desencriptar");
     }
-    textoDesncriptado= arreglo.toString().replace(/,/g, '');
-    console.log("Texto desncriptado exitosamente");
-    return textoDesncriptado;
 
+};
+
+function etiquetasActualizadas(){
+    document.getElementById("texto").value="";
+    document.getElementById("imagendinamica").hidden=true;
+    document.getElementById("titulo-resultado").hidden=true;
+    document.getElementById("parrafo").textContent="";
+    document.getElementById("btn-copiar").removeAttribute("hidden");
 }
+
+function copiarTexto(){
+    const button = document.getElementById("btn-copiar");
+    const quote = document.getElementById("respuesta");
+
+    const copyToClipboard = async str => {
+    try {
+        await navigator.clipboard.writeText(str);
+        console.log("texto copiado");
+    } catch (error) {
+        console.log(error);
+    }
+    };
+
+    button.addEventListener("click", () => {
+    copyToClipboard(quote.textContent);
+    });
+}
+
+
+

@@ -26,13 +26,15 @@
         </div>
 
         <div class="container-resultado">
+            <p id="respuesta" class="div-respuesta"></p>
             <img src="" alt="imagen dinamica" id="imagendinamica">
             <div id="mensaje-resultado" class="mensaje-resultado">
                 <h2 id="titulo-resultado">Ningun texto encontrado</h2>
-                <p class="parrafo">Ingrese aqui el texto que desee encriptar o desencriptar.</p>
-                <textarea name="mensaje" id="mensaje" class="mensaje" cols="30" rows="5"></textarea>
-            </div>
-            
+                <p class="parrafo" id="parrafo">Ingrese aqui el texto que desee encriptar o desencriptar.</p>
+                <br><br><br><br><br>
+                <input type="button" onclick="copiarTexto();" name="copiar" id="btn-copiar" class="btn-copiar" value="copiar" hidden>
+                </div>        
+            </div>  
         </div>
     </main>
     <footer>

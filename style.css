@@ -181,6 +181,24 @@ body{
 
 }
 
+.btn-copiar{
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    gap: 8px;
+    width: 75%;
+    bottom: 5%;
+    background-color: #D8DFE8;
+    border: 1px solid #D8DFE8;
+    border-radius: 24px;
+    color: #0A3871;
+    font-family: "inter";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    
+}
+
 .container-resultado{
     display: flex;
     position: absolute;
@@ -213,10 +231,12 @@ body{
     font-size: 24px;
     font-weight: 700;
     width: 60%;
-    line-height: 120px;
+    top: 70%;
+    line-height: 150%;
     text-align: center;
     color: #343a40;
 }
+
 
 .mensaje-resultado p{
     display: flex;
@@ -225,12 +245,37 @@ body{
     font-size: 16px;
     position: absolute;
     width: 78%;
+    top: 75%;
     color: #495057;
     line-height: 150%;
 }
 
-.mensaje-resultado textarea{
-    border: none;
+.div-respuesta{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.1%;
+    gap: 16px;
+    width: 100%;
+    top: 15%;
+    text-align: center;
+}
+
+.div-respuesta p{
+    display: flex;
+    font-family: "inter";
+    font-weight: 400;
+    font-size: 24px;
+    position: absolute;
+    width: 65%;
+    top: 1%;
+    margin: 8px;
+    padding: 1.1%;
+    gap: 16px;
+    color: #495057;
+    line-height: 150%;
 }
 
 #imagendinamica{
@@ -280,6 +325,13 @@ body{
         width: 48%;
         border-radius: 16px;
     }
+    .btn-copiar{
+        position: relative; 
+        width: 75%;
+        top: 95%;
+        border-radius: 16px;
+
+    }
 
     .btn-encriptar:hover, .btn-desencriptar.btn-encriptar:hover{
         width: 48%;
@@ -317,5 +369,17 @@ body{
         text-align: center;
         color: #343a40;
     }
-    
+    .div-respuesta{
+    gap: 16px;
+    width: 100%;
+    text-align: center;
+}
+
+.div-respuesta p{
+    font-size: 16px;
+        width: 80%;
+        line-height: 40px;
+        text-align: center;
+        color: #343a40;
+}
 }
