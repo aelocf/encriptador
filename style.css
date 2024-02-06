@@ -198,6 +198,41 @@ body{
     line-height: 19.36px;
     
 }
+.btn-copiar:hover{
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    gap: 8px;
+    width: 75%;
+    bottom: 5%;
+    background-color: #a4b7d0;
+    border: 1px solid #94a2b3;
+    border-radius: 24px;
+    color: #0A3871;
+    font-family: "inter";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    
+}
+
+.btn-copiar:active{
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    gap: 8px;
+    width: 75%;
+    bottom: 5%;
+    background-color: #dde2e9;
+    border: none;
+    border-radius: 24px;
+    color: #0A3871;
+    font-family: "inter";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    
+}
 
 .container-resultado{
     display: flex;
@@ -341,6 +376,23 @@ body{
         width: 48%;
         border-radius: 16px;
     }
+
+    .btn-copiar:active{
+        position: relative; 
+        width: 75%;
+        top: 95%;
+        border-radius: 16px;
+
+    }
+    
+    .btn-copiar:hover{
+        position: relative; 
+        width: 75%;
+        top: 95%;
+        border-radius: 16px;
+
+    }
+
     .container-resultado{
         width: 80%;
         height: 25%;
